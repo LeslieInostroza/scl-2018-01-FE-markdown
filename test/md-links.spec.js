@@ -3,7 +3,10 @@ global.window = global;
 require('../lib/md-links');
 
 describe('Validar funcion', ()=>{
-  it('Deberia ser una funcion mdLinks',()=>{
+  it('debería exponer función mdLinks',()=>{
     assert.isFunction(mdLinks);
   });
+});
+describe('mdLinks(path, options)', ()=> {
+  it('deberian ser parametros');
 });
