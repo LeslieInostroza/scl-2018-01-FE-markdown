@@ -1,0 +1,26 @@
+{
+  "name": "scl-2018-01-fe-markdown",
+  "version": "1.0.0",
+  "description": "Libreria para validar archivos markdown, y buscar links",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeslieInostroza/scl-2018-01-FE-markdown.git"
+  },
+  "keywords": [
+    "Libreria"
+  ],
+  "author": "leslie <leslie.ino@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeslieInostroza/scl-2018-01-FE-markdown/issues"
+  },
+  "homepage": "https://github.com/LeslieInostroza/scl-2018-01-FE-markdown#readme",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "mocha": "5.2.0"
+  }
+}
