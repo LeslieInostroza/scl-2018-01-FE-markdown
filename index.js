@@ -6,12 +6,17 @@ const [, , ...args] = process.argv;
 fs.readdir(`${args}`, function(err, files) {
   if (err) {
     console.log('Error reading files: ', err);
-  } else {
-    for (let i = 0; i < files.length; i++) {
-      // read its contents.
-      if (path.extname(files[i] === '.md')) {
-        console.log(files);
-      }
+  }
+  for (let i = 0; i < files.length; i++) {
+    // read its contents.
+    if (path.extname(files[i] === '.md')) {
+      console.log(files[i]);
+      fs.readFile(files[i], function(error, data) {
+        if (error) {
+          console.log('error', error);
+        }
+        console.log(data);
+      });
     }
   }
 });
