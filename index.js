@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const [, , ...args] = process.argv;
+//const [, , ...args] = process.argv;
 
-fs.readdir(`${args}`, function(err, files) {
+fs.readdir('', function(err, files) {
   if (err) {
     console.log('Error reading files: ', err);
   }
