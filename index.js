@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const mdLinks = require('./lib/md-links');
+const fetch = require('node-fetch');
 
 
 let directory = process.cwd(); // muestra ruta de directorio
@@ -20,12 +21,13 @@ fs.readdir(dirBuf, (err, files) => {
           if (err) {
             console.log(err);
           } else {
-            //console.log(mdLinks(data));
+            // console.log(mdLinks(data));
             mdLinks(data).forEach(element => {
-              console.log(element.href);
+              fetch(`${element.href}`).then((response)=>{
+                console.log(response);
+            }) 
               
-            });
-            
+            })
           }
         });
       }
