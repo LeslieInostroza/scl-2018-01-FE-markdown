@@ -25,12 +25,9 @@ fs.readdir(dirBuf, (err, files) => {
             mdLinks(data).forEach(element => {
               console.log(element.href);
               fetch(`${element.href}`).then((response)=>{
-                
                 console.log(response.statusText);
-                
-            }) 
-              
-            })
+              });
+            });
           }
         });
       }
