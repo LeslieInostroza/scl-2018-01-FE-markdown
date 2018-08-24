@@ -11,23 +11,21 @@ fs.readdir(dirBuf, (err, files) => {
   if (err) {
     console.log(err.message);
   } else {
-    console.log(files);
-  }  
-  console.log(files);
-  for (let i = 0; i < files.length; i++) {
-    if (path.extname(files[i]) === '.md') {
-      console.log(files[i]);
-      fs.readFile(files[i], 'utf8', function(err, data) {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log(mdLinks(data));
-        }
-      });
-    }
+    files.forEach(file => {
+      console.log(file);
+      if (path.extname(file) === '.md') {
+        console.log(file);
+        fs.readFile(file, 'utf8', function(err, data) {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log(mdLinks(data));
+          }
+        });
+      }
+    });
   }
 });
-
 
 /* var ext = path.extname('/leslie/Laboratoria/ClasesFrontEnd/Proyectos/scl-2018-01-FE-markdown/README.md');
 console.log(ext);*/
