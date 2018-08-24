@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const mdLinks = require('./lib/md-links');
 
+
 let directory = process.cwd(); // muestra ruta de directorio
 console.log(`Current directory: ${process.cwd()}`);
 let dirBuf = Buffer.from(directory); // tranforma contenidos a string
@@ -14,12 +15,17 @@ fs.readdir(dirBuf, (err, files) => {
     files.forEach(file => {
       console.log(file);
       if (path.extname(file) === '.md') {
-        console.log(file);
+        // console.log(file);
         fs.readFile(file, 'utf8', function(err, data) {
           if (err) {
             console.log(err);
           } else {
-            console.log(mdLinks(data));
+            //console.log(mdLinks(data));
+            mdLinks(data).forEach(element => {
+              console.log(element.href);
+              
+            });
+            
           }
         });
       }
