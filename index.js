@@ -15,18 +15,16 @@ fs.readdir(dirBuf, (err, files) => {
   } else {
     files.forEach(file => {
       // console.log(file);
-      if (path.extname(file) === '.md') {
+      if (path.extname(file) === '.md') { // selecciona solo los .md
         // console.log(file);
-        fs.readFile(file, 'utf8', function(err, data) {
+        fs.readFile(file, 'utf8', function(err, data) { // lee los archivos .md
           if (err) {
             console.log(err);
           } else {
             // console.log(mdLinks(data));
             mdLinks(data).forEach(element => {
-              console.log(files);
-              
-              console.log(element.href);
-              fetch(`${element.href}`).then((response)=>{
+              console.log(file, element.href, element.text);
+              fetch(`${element.href}`, { validate: true }).then((response)=>{
                 console.log(response.url, response.status, response.statusText);
               });
               // console.log(element.href);
