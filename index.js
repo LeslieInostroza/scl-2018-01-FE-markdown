@@ -23,8 +23,11 @@ fs.readdir(dirBuf, (err, files) => {
           } else {
             // console.log(mdLinks(data));
             mdLinks(data).forEach(element => {
+              console.log(element.href);
               fetch(`${element.href}`).then((response)=>{
-                console.log(response);
+                
+                console.log(response.statusText);
+                
             }) 
               
             })
