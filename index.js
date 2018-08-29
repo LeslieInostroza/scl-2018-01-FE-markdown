@@ -1,17 +1,15 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
-const markdown = require('./lib/md-links');
-const fetch = require('node-fetch');
 const mdLinks = require('./lib/md-links');
 
-if (require.main === module) {
-  const [, , ...args] = process.argv;
-
-  mdLinks(args[0]).then((link) => {
-    /* if (link.length === 0) {
-      console.error('Error');
-    }*/
+const [, , ...args] = process.argv;
+if (require.main === module) {  
+  let options = {};
+  if (args.includes('--validate')) {
+    mdLinks.validate = true;  
+  }
+  mdLinks(args[0], options).then((data) => {
+    // linksData.forEach(element => {    
+    // let resultData = '';
   }).catch((error) => {
     console.error(error);
   });
