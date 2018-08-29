@@ -16,8 +16,7 @@
   "author": "leslie <leslie.ino@gmail.com>",
   "license": "MIT",
   "bin": {
-    "md-links": "index.js",
-    "--validate": "index.js"
+    "md-links": "index.js"
   },
   "bugs": {
     "url": "https://github.com/LeslieInostroza/scl-2018-01-FE-markdown/issues"
