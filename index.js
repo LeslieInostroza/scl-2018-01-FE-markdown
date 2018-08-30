@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 const mdLinks = require('./lib/md-links');
 
-const [, , ...args] = process.argv;
+mdLinks();
+/* const [, , ...args] = process.argv;
 if (require.main === module) {  
   let options = {};
   if (args.includes('--validate')) {
@@ -13,4 +14,4 @@ if (require.main === module) {
   }).catch((error) => {
     console.error(error);
   });
-}
+}*/
