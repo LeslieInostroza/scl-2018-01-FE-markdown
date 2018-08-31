@@ -4,7 +4,7 @@ const mdLinks = require('./lib/md-links');
 const options = require('./lib/md-links');
 const colors = require('colors');
 const [,, ...userArg] = process.argv; // posicion de ruta escrita por el usuario
-console.log('Ruta Entregada: ' + userArg);
+console.log(colors.red('Ruta Entregada: ') + userArg);
 const archivo = userArg[0];
 let pathFileAbs = path.resolve(archivo);
 options.validate = userArg[1];
