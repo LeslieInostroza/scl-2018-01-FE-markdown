@@ -37,7 +37,7 @@ Para validar el estado (200 OK ó 404 NOT FOUND), en cual, se encuentran los lin
 $md-links <nombre-de-tu-archivo.md> --validate
 ```
 
-##Ejemplo
+## Ejemplo
 
 ```
 $ md-links ./some/example.md
