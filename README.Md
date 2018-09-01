@@ -14,6 +14,7 @@ _Instalar npm (sudo) npm install -g_
 ```
 $npm install --save marked
 $npm install node-fetch --save
+$npm install colors
 
 ```
 
@@ -34,6 +35,21 @@ Para validar el estado (200 OK ó 404 NOT FOUND), en cual, se encuentran los lin
 
 ```
 $md-links <nombre-de-tu-archivo.md> --validate
+```
+
+##Ejemplo
+
+```
+$ md-links ./some/example.md
+Ruta: ./some/example.md Linea:10 Titulo: algo http://algo.com/2/3/
+Ruta: ./some/example.md Linea:48 Titulo: algo http://algo.com/2/3/
+Ruta: ./some/example.md Linea:78 Titulo: algo http://algo.com/2/3/
+```
+
+```
+$ md-links ./some/example.md --validate
+Ruta: ./some/example.md Linea:10 http://algo.com/2/3/ Estado: 404 NOT FOUND
+Ruta: ./some/example.md Linea:48 http://google.com Estado: 202 OK
 ```
 ## Documentación
 
