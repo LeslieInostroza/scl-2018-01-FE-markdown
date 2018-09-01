@@ -8,8 +8,13 @@ El Proyecto Markdown Links, es un desafio, otorgado por Laboratoria, a sus alumm
 
 ### Requisitos Previos 📋
 
-_Instalar npm (sudo) npm install -g_
-,Ademas, debes instalar, unas librerías/dependencias, en tu consola, con los siguente comandos:
+_Descargar el archivo scl-2018-01-FE-markdown desde el siguiente link: https://github.com/LeslieInostroza/scl-2018-01-FE-markdown_
+
+_Extraer el archivo descargado_
+
+_Instalar npm (sudo) npm install -g_ (desde su consola)
+
+Ademas, debes instalar, unas librerías/dependencias, en tu consola, con los siguente comandos:
 
 ```
 $npm install --save marked
