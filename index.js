@@ -7,5 +7,4 @@ const [,, ...userArg] = process.argv; // posicion de ruta escrita por el usuario
 console.log(colors.red('Ruta Entregada: ') + userArg);
 const archivo = userArg[0];
 let pathFileAbs = path.resolve(archivo);
-options.validate = userArg[1];
 mdLinks(pathFileAbs);
