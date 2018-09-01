@@ -38,11 +38,19 @@ $md-links <nombre-de-tu-archivo.md> --validate
 ## Documentación
 
 [introduccion a Node.js](https://juanda.gitbooks.io/webapps/content/javascript/node.html)
+
 [node.js - fs.readdir](https://www.youtube.com/watch?v=XFRQHhKTutI)
+
 [node.js - file System](https://www.youtube.com/watch?v=1SvugIU1l0w&t=228s)
+
 [node.js - file System](https://www.youtube.com/watch?v=5WcFzigivRI&t=468s)
+
 [Crear libreria](https://juanda.gitbooks.io/webapps/content/javascript/crear_una_libreria_en_nodejs.html)
+
 [ejemplo de funcion](http://stevehanov.ca/blog/index.php?id=127)
+
 [path](https://nodejs.org/api/path.html)
+
 [file System](https://nodejs.org/api/fs.html)
+
 [file System](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)
