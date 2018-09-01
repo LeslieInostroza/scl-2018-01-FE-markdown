@@ -22,7 +22,7 @@ $npm install node-fetch --save
 _Pasos para poder integrar ExtractLink, a tus proyectos, debes seguir, los pasos a continuación:_
 
 ```
-$npm install ExtractLink -g 
+$npm install md-links 
 ```
 Ejecuta el comando que se mostrara a continuacion, que mostrara la lista de links, del archivo seleccionado:
 
